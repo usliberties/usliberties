@@ -25,7 +25,7 @@ WEBPACK_SERVER_CONFIG=webpack-server.config.js
 
 .PHONY: test test-w dev-install build build-module lint clean
 
-build: dist/constitutional.js dist/constitutional.min.js dist/constitutional.min.gz
+build: dist/constitutional.css dist/constitutional.js dist/constitutional.min.js dist/constitutional.min.gz
 
 # Run all JavaScript tests
 test: ${NODE}
@@ -39,17 +39,20 @@ build-module: src/*
 serve:
 	$(BABEL_NODE) server.js
 
-dist/constitutional.js:
+dist/constitutional.js: src/*.js index.js package.json Makefile
 	$(WEBPACK) --config $(WEBPACK_CLIENT_CONFIG) index.js dist/constitutional.js
 
-dist/constitutional.min.js:
+dist/constitutional.min.js: dist/constitutional.js
 	$(WEBPACK) --optimize-minimize --config $(WEBPACK_CLIENT_CONFIG) index.js dist/constitutional.min.js
 
-dist/constitutional.min.gz:
+dist/constitutional.min.gz: dist/constitutional.min.js
 	gzip --best -c dist/constitutional.min.js > dist/constitutional.min.gz
 
-dist/static:
-	mkdir -p dist/static
+dist/constitutional.css: dist
+	cp -r static/* dist/
+
+dist:
+	mkdir -p dist
 	
 lint:
 	$(ESLINT) --config .eslintrc.json src/ test/
