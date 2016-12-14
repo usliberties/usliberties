@@ -11,8 +11,16 @@ function processChildren(children) {
   }
 }
 
+
+function acluDonate() {
+  dom.a({className: 'aclu-button', href: 'http://bit.ly/2hmlTd3', target: '_blank'}, () => {
+    dom.text('Donate to the ACLU now!');
+  });
+}
+
 function constitution(document) {
   return dom.div({className: 'doc'}, () => {
+    acluDonate();
     dom.h1(document.name);
     dom.header(() => {
       document.children.forEach((part, index) => index > 0 ? partLink(part) : null);
@@ -49,14 +57,18 @@ function article(article) {
   });
 }
 
+function processParagraph(text) {
+  return text;
+}
+
 function paragraph(paragraph) {
-  return dom.p(paragraph.content.join(''));
+  return dom.p(processParagraph(paragraph.content.join('')));
 }
 
 function part(part) {
   return dom.div({id: getId(part), className: 'part'}, () => {
-    dom.h2(part.name);
     if (part.name !== 'Preamble') {
+      dom.h2(part.name);
       dom.a({href: '#'}, 'Back to top');
       dom.br();
     }
