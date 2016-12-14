@@ -1,9 +1,11 @@
 import {dom} from 'nomplate';
 
+import components from './components';
+import constitution from '../data/constitution.json';
+
 function constitutional() {
-  console.log('CLIENT LOADEd');
   return dom.div(() => {
-    dom.h1('We the people!');
+    components.constitution(constitution);
   });
 };
 
