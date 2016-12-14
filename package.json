@@ -12,7 +12,7 @@
   "author": "Trevor O'Brien and Luke Bayes",
   "license": "MIT",
   "dependencies": {
-    "nomplate": "^1.0.2"
+    "nomplate": "^1.0.4"
   },
   "devDependencies": {
     "babel-core": "^6.20.0",
