@@ -25,7 +25,7 @@ WEBPACK_SERVER_CONFIG=webpack-server.config.js
 
 .PHONY: test test-w dev-install build build-module lint clean
 
-build: dist/constitutional.css dist/constitutional.js dist/constitutional.min.js dist/constitutional.min.gz
+build: data/* src/* static/* dist/constitutional.css dist/constitutional.js dist/constitutional.min.js dist/constitutional.min.gz
 
 # Run all JavaScript tests
 test: ${NODE}
@@ -48,7 +48,7 @@ dist/constitutional.min.js: dist/constitutional.js
 dist/constitutional.min.gz: dist/constitutional.min.js
 	gzip --best -c dist/constitutional.min.js > dist/constitutional.min.gz
 
-dist/constitutional.css: dist
+dist/constitutional.css: dist static/*
 	cp -r static/* dist/
 
 dist:
