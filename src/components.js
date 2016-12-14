@@ -11,24 +11,41 @@ function processChildren(children) {
   }
 }
 
+function constitution(document) {
+  return dom.div({className: 'doc'}, () => {
+    dom.h1(document.name);
+    dom.header(() => {
+      document.children.forEach((part, index) => index > 0 ? partLink(part) : null);
+    });
+    processChildren(document.children);
+  });
+}
+
+function getId(entity) {
+  if (entity.identifier) {
+    return `${entity.name}-${entity.identifier}`;
+  } else {
+    return entity.name;
+  }
+}
+
+function partLink(part) {
+  dom.span({className: 'part-link'}, () => {
+    dom.a({href: `#${getId(part)}`}, part.name);
+  });
+}
+
 function amendment(amendment) {
-  return dom.div({className: 'amendment'}, () => {
-    dom.h2(amendment.name);
+  return dom.div({id: getId(amendment), className: 'amendment'}, () => {
+    dom.h3(`${amendment.num}: ${amendment.name}`);
     processChildren(amendment.children);
   });
 }
 
 function article(article) {
-  return dom.div({id: `article-${article.identifier}`, className: 'article'}, () => {
+  return dom.div({id: getId(article), className: 'article'}, () => {
     dom.h3(article.name);
     processChildren(article.children);
-  });
-}
-
-function constitution(document) {
-  return dom.div({className: 'doc'}, () => {
-    dom.h1(document.name);
-    processChildren(document.children);
   });
 }
 
@@ -37,14 +54,18 @@ function paragraph(paragraph) {
 }
 
 function part(part) {
-  return dom.div({className: 'part'}, () => {
+  return dom.div({id: getId(part), className: 'part'}, () => {
     dom.h2(part.name);
+    if (part.name !== 'Preamble') {
+      dom.a({href: '#'}, 'Back to top');
+      dom.br();
+    }
     processChildren(part.children);
   });
 }
 
 function section(section) {
-  return dom.div({id: `section-${section.identifier}`, className: 'section'}, () => {
+  return dom.div({id: getId(section), className: 'section'}, () => {
     processChildren(section.children);
   });
 }
