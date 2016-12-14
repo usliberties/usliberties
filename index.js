@@ -1,6 +1,7 @@
-import constitutional from './src/constitutional';
 import {renderElement} from 'nomplate';
 
+import constitutional from './src/constitutional';
+import components from './src/components';
 
 if (require.main === module) {
   global.window.onload = () => {
@@ -10,4 +11,10 @@ if (require.main === module) {
   };
 }
 
-export default constitutional;
+// TODO(lbayes): Why won't export default work here?
+module.exports = {
+  components,
+  constitutional,
+};
+
+

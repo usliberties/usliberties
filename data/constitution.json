@@ -25,13 +25,13 @@
             "name": "Articles",
             "children": [
                 {
-                    "identifer": 1,
+                    "identifier": 1,
                     "num": "Article I ",
                     "type": "article",
                     "name": " The Legislative Branch",
                     "children": [
                         {
-                            "identifer": 2,
+                            "identifier": 2,
                             "num": "Section 1 ",
                             "type": "section",
                             "name": " The Legislature",
@@ -48,7 +48,7 @@
                             ]
                         },
                         {
-                            "identifer": 4,
+                            "identifier": 4,
                             "num": "Section 2 ",
                             "type": "section",
                             "name": " The House",
@@ -101,7 +101,7 @@
                             ]
                         },
                         {
-                            "identifer": 10,
+                            "identifier": 10,
                             "num": "Section 3 ",
                             "type": "section",
                             "name": " The Senate",
@@ -172,7 +172,7 @@
                             ]
                         },
                         {
-                            "identifer": 18,
+                            "identifier": 18,
                             "num": "Section 4 ",
                             "type": "section",
                             "name": " Elections, Meetings",
@@ -198,7 +198,7 @@
                             ]
                         },
                         {
-                            "identifer": 21,
+                            "identifier": 21,
                             "num": "Section 5 ",
                             "type": "section",
                             "name": " Membership, Rules, Journals, Adjournment",
@@ -242,7 +242,7 @@
                             ]
                         },
                         {
-                            "identifer": 26,
+                            "identifier": 26,
                             "num": "Section 6 ",
                             "type": "section",
                             "name": " Compensation",
@@ -268,7 +268,7 @@
                             ]
                         },
                         {
-                            "identifer": 29,
+                            "identifier": 29,
                             "num": "Section 7 ",
                             "type": "section",
                             "name": " Revenue Bills, Legislative Process, Presidential Veto",
@@ -303,7 +303,7 @@
                             ]
                         },
                         {
-                            "identifer": 33,
+                            "identifier": 33,
                             "num": "Section 8 ",
                             "type": "section",
                             "name": " Powers of Congress",
@@ -482,7 +482,7 @@
                             ]
                         },
                         {
-                            "identifer": 53,
+                            "identifier": 53,
                             "num": "Section 9 ",
                             "type": "section",
                             "name": " Limits on Congress",
@@ -562,7 +562,7 @@
                             ]
                         },
                         {
-                            "identifer": 62,
+                            "identifier": 62,
                             "num": "Section 10 ",
                             "type": "section",
                             "name": " Powers prohibited of States",
@@ -599,13 +599,13 @@
                     ]
                 },
                 {
-                    "identifer": 66,
+                    "identifier": 66,
                     "num": "Article II ",
                     "type": "article",
                     "name": " The Executive Branch",
                     "children": [
                         {
-                            "identifer": 67,
+                            "identifier": 67,
                             "num": "Section 1 ",
                             "type": "section",
                             "name": " The President",
@@ -694,7 +694,7 @@
                             ]
                         },
                         {
-                            "identifer": 77,
+                            "identifier": 77,
                             "num": "Section 2 ",
                             "type": "section",
                             "name": " Civilian Power over Military, Cabinet, Pardon Power, Appointments",
@@ -729,7 +729,7 @@
                             ]
                         },
                         {
-                            "identifer": 81,
+                            "identifier": 81,
                             "num": "Section 3 ",
                             "type": "section",
                             "name": " State of the Union, Convening Congress",
@@ -746,7 +746,7 @@
                             ]
                         },
                         {
-                            "identifer": 83,
+                            "identifier": 83,
                             "num": "Section 4 ",
                             "type": "section",
                             "name": " Disqualification",
@@ -765,13 +765,13 @@
                     ]
                 },
                 {
-                    "identifer": 85,
+                    "identifier": 85,
                     "num": "Article III ",
                     "type": "article",
                     "name": " The Judicial Branch",
                     "children": [
                         {
-                            "identifer": 86,
+                            "identifier": 86,
                             "num": "Section 1 ",
                             "type": "section",
                             "name": " Judicial Powers",
@@ -788,7 +788,7 @@
                             ]
                         },
                         {
-                            "identifer": 88,
+                            "identifier": 88,
                             "num": "Section 2 ",
                             "type": "section",
                             "name": " Trial by Jury, Original Jurisdiction, Jury Trials",
@@ -823,7 +823,7 @@
                             ]
                         },
                         {
-                            "identifer": 92,
+                            "identifier": 92,
                             "num": "Section 3 ",
                             "type": "section",
                             "name": " Treason",
@@ -851,13 +851,13 @@
                     ]
                 },
                 {
-                    "identifer": 95,
+                    "identifier": 95,
                     "num": "Article IV ",
                     "type": "article",
                     "name": " The States",
                     "children": [
                         {
-                            "identifer": 96,
+                            "identifier": 96,
                             "num": "Section 1 ",
                             "type": "section",
                             "name": " Each State to Honor all others",
@@ -874,7 +874,7 @@
                             ]
                         },
                         {
-                            "identifer": 98,
+                            "identifier": 98,
                             "num": "Section 2 ",
                             "type": "section",
                             "name": " State citizens, Extradition",
@@ -909,7 +909,7 @@
                             ]
                         },
                         {
-                            "identifer": 102,
+                            "identifier": 102,
                             "num": "Section 3 ",
                             "type": "section",
                             "name": " New States",
@@ -935,7 +935,7 @@
                             ]
                         },
                         {
-                            "identifer": 105,
+                            "identifier": 105,
                             "num": "Section 4 ",
                             "type": "section",
                             "name": " Republican government",
@@ -954,7 +954,7 @@
                     ]
                 },
                 {
-                    "identifer": 107,
+                    "identifier": 107,
                     "num": "Article V ",
                     "type": "article",
                     "name": " Amendment",
@@ -971,7 +971,7 @@
                     ]
                 },
                 {
-                    "identifer": 109,
+                    "identifier": 109,
                     "num": "Article VI ",
                     "type": "article",
                     "name": " Debts, Supremacy, Oaths",
@@ -1006,7 +1006,7 @@
                     ]
                 },
                 {
-                    "identifer": 113,
+                    "identifier": 113,
                     "num": "Article VII ",
                     "type": "article",
                     "name": " Ratification",
@@ -1030,7 +1030,7 @@
             "name": "Amendments",
             "children": [
                 {
-                    "identifer": 115,
+                    "identifier": 115,
                     "num": "Amendment 1 ",
                     "type": "amendment",
                     "name": " Freedom of Religion, Press, Expression",
@@ -1047,7 +1047,7 @@
                     ]
                 },
                 {
-                    "identifer": 117,
+                    "identifier": 117,
                     "num": "Amendment 2 ",
                     "type": "amendment",
                     "name": " Right to Bear Arms",
@@ -1064,7 +1064,7 @@
                     ]
                 },
                 {
-                    "identifer": 119,
+                    "identifier": 119,
                     "num": "Amendment 3 ",
                     "type": "amendment",
                     "name": " Quartering of Soldiers",
@@ -1081,7 +1081,7 @@
                     ]
                 },
                 {
-                    "identifer": 121,
+                    "identifier": 121,
                     "num": "Amendment 4 ",
                     "type": "amendment",
                     "name": " Search and Seizure",
@@ -1098,7 +1098,7 @@
                     ]
                 },
                 {
-                    "identifer": 123,
+                    "identifier": 123,
                     "num": "Amendment 5 ",
                     "type": "amendment",
                     "name": " Trial and Punishment, Compensation for Takings",
@@ -1142,7 +1142,7 @@
                     ]
                 },
                 {
-                    "identifer": 128,
+                    "identifier": 128,
                     "num": "Amendment 6 ",
                     "type": "amendment",
                     "name": " Right to Speedy Trial, Confrontation of Witnesses",
@@ -1159,7 +1159,7 @@
                     ]
                 },
                 {
-                    "identifer": 130,
+                    "identifier": 130,
                     "num": "Amendment 7 ",
                     "type": "amendment",
                     "name": " Trial by Jury in Civil Cases",
@@ -1176,7 +1176,7 @@
                     ]
                 },
                 {
-                    "identifer": 132,
+                    "identifier": 132,
                     "num": "Amendment 8 ",
                     "type": "amendment",
                     "name": " Cruel and Unusual Punishment",
@@ -1193,7 +1193,7 @@
                     ]
                 },
                 {
-                    "identifer": 134,
+                    "identifier": 134,
                     "num": "Amendment 9 ",
                     "type": "amendment",
                     "name": " Construction of Constitution",
@@ -1210,7 +1210,7 @@
                     ]
                 },
                 {
-                    "identifer": 136,
+                    "identifier": 136,
                     "num": "Amendment 10 ",
                     "type": "amendment",
                     "name": " Powers of the States and People",
@@ -1227,7 +1227,7 @@
                     ]
                 },
                 {
-                    "identifer": 138,
+                    "identifier": 138,
                     "num": "Amendment 11 ",
                     "type": "amendment",
                     "name": " Judicial Limits",
@@ -1244,7 +1244,7 @@
                     ]
                 },
                 {
-                    "identifer": 140,
+                    "identifier": 140,
                     "num": "Amendment 12 ",
                     "type": "amendment",
                     "name": " Choosing the President, Vice",
@@ -1288,7 +1288,7 @@
                     ]
                 },
                 {
-                    "identifer": 145,
+                    "identifier": 145,
                     "num": "Amendment 13 ",
                     "type": "amendment",
                     "name": " Slavery Abolished",
@@ -1314,7 +1314,7 @@
                     ]
                 },
                 {
-                    "identifer": 148,
+                    "identifier": 148,
                     "num": "Amendment 14 ",
                     "type": "amendment",
                     "name": " Citizenship Rights",
@@ -1367,7 +1367,7 @@
                     ]
                 },
                 {
-                    "identifer": 154,
+                    "identifier": 154,
                     "num": "Amendment 15 ",
                     "type": "amendment",
                     "name": " Race No Bar to Vote",
@@ -1393,7 +1393,7 @@
                     ]
                 },
                 {
-                    "identifer": 157,
+                    "identifier": 157,
                     "num": "Amendment 16 ",
                     "type": "amendment",
                     "name": " Status of Income Tax Clarified",
@@ -1410,7 +1410,7 @@
                     ]
                 },
                 {
-                    "identifer": 159,
+                    "identifier": 159,
                     "num": "Amendment 17 ",
                     "type": "amendment",
                     "name": " Senators Elected by Popular Vote",
@@ -1445,7 +1445,7 @@
                     ]
                 },
                 {
-                    "identifer": 163,
+                    "identifier": 163,
                     "num": "Amendment 18 ",
                     "type": "amendment",
                     "name": " Liquor Abolished",
@@ -1480,7 +1480,7 @@
                     ]
                 },
                 {
-                    "identifer": 167,
+                    "identifier": 167,
                     "num": "Amendment 19 ",
                     "type": "amendment",
                     "name": " Women's Suffrage",
@@ -1506,7 +1506,7 @@
                     ]
                 },
                 {
-                    "identifer": 170,
+                    "identifier": 170,
                     "num": "Amendment 20 ",
                     "type": "amendment",
                     "name": " Presidential, Congressional Terms",
@@ -1568,7 +1568,7 @@
                     ]
                 },
                 {
-                    "identifer": 177,
+                    "identifier": 177,
                     "num": "Amendment 21 ",
                     "type": "amendment",
                     "name": " Amendment 18 Repealed",
@@ -1603,7 +1603,7 @@
                     ]
                 },
                 {
-                    "identifer": 181,
+                    "identifier": 181,
                     "num": "Amendment 22 ",
                     "type": "amendment",
                     "name": " Presidential Term Limits",
@@ -1629,7 +1629,7 @@
                     ]
                 },
                 {
-                    "identifer": 184,
+                    "identifier": 184,
                     "num": "Amendment 23 ",
                     "type": "amendment",
                     "name": " Presidential Vote for District of Columbia",
@@ -1655,7 +1655,7 @@
                     ]
                 },
                 {
-                    "identifer": 187,
+                    "identifier": 187,
                     "num": "Amendment 24 ",
                     "type": "amendment",
                     "name": " Poll Tax Barred",
@@ -1690,7 +1690,7 @@
                     ]
                 },
                 {
-                    "identifer": 191,
+                    "identifier": 191,
                     "num": "Amendment 25 ",
                     "type": "amendment",
                     "name": " Presidential Disability and Succession",
@@ -1743,7 +1743,7 @@
                     ]
                 },
                 {
-                    "identifer": 197,
+                    "identifier": 197,
                     "num": "Amendment 26 ",
                     "type": "amendment",
                     "name": " Voting Age Set to 18 Years",
@@ -1769,7 +1769,7 @@
                     ]
                 },
                 {
-                    "identifer": 200,
+                    "identifier": 200,
                     "num": "Amendment 27 ",
                     "type": "amendment",
                     "name": " Limiting Congressional Pay Increases",
