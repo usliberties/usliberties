@@ -1,4 +1,5 @@
 import {dom} from 'nomplate';
+import timeline from './timeline';
 
 function processChildren(children) {
   if (children) {
@@ -11,7 +12,6 @@ function processChildren(children) {
   }
 }
 
-
 function acluDonate() {
   dom.a({className: 'aclu-button', href: 'http://bit.ly/2hmlTd3', target: '_blank'}, () => {
     dom.text('Donate to the ACLU now!');
@@ -21,8 +21,9 @@ function acluDonate() {
 function constitution(document) {
   return dom.div({className: 'doc'}, () => {
     acluDonate();
-    dom.h1(document.name);
     dom.header(() => {
+      dom.h1(document.name);
+      timeline(document);
       if (document.children) {
         document.children.forEach((part, index) => index > 0 ? partLink(part) : null);
       }
@@ -91,6 +92,7 @@ const lookup = {
   paragraph,
   part,
   section,
+  timeline,
 };
 
 export default lookup;
