@@ -21,7 +21,7 @@ describe('Components', () => {
     });
 
     assert.equal(render(element).outerHTML,
-      '<div class="doc"><a class="aclu-button" href="http://bit.ly/2hmlTd3" target="_blank">Donate to the ACLU now!</a><h1>abcd</h1><header></header></div>');
+      '<div class="doc"><a class="aclu-button" href="http://bit.ly/2hmlTd3" target="_blank">Donate to the ACLU now!</a><header><h1>abcd</h1><div class="timeline"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"><rect height="100%" width="100%" style="stroke:#333; fill:#ccc;"></rect></svg></div></header></div>');
   });
 
   it('builds child part', () => {
