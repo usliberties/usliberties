@@ -23,7 +23,9 @@ function constitution(document) {
     acluDonate();
     dom.h1(document.name);
     dom.header(() => {
-      document.children.forEach((part, index) => index > 0 ? partLink(part) : null);
+      if (document.children) {
+        document.children.forEach((part, index) => index > 0 ? partLink(part) : null);
+      }
     });
     processChildren(document.children);
   });

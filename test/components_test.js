@@ -20,8 +20,8 @@ describe('Components', () => {
       name: 'abcd'
     });
 
-    const result = render(element);
-    assert.equal(result.outerHTML, '<div class="doc"><h1>abcd</h1></div>');
+    assert.equal(render(element).outerHTML,
+      '<div class="doc"><a class="aclu-button" href="http://bit.ly/2hmlTd3" target="_blank">Donate to the ACLU now!</a><h1>abcd</h1><header></header></div>');
   });
 
   it('builds child part', () => {
