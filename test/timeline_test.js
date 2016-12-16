@@ -12,7 +12,7 @@ describe('Timeline', () => {
   });
 
   function render(element) {
-    return renderElement(element, null, document);
+    return renderElement(element, document);
   }
 
   it('is instantiable', () => {

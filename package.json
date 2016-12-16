@@ -24,6 +24,7 @@
     "jsdom": "^9.8.3",
     "json-loader": "^0.5.4",
     "mocha": "^3.2.0",
+    "nomplate": "^1.1.1",
     "sinon": "^1.17.6",
     "webpack": "^1.14.0"
   }
