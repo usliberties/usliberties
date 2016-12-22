@@ -1,20 +1,28 @@
-import {renderElement} from 'nomplate';
+const dom = require('nomplate').dom;
 
-import constitutional from './src/constitutional';
-import components from './src/components';
+function index() {
+  let hash = '';
+  let path = '';
+  
+  const args = process.argv;
+  
+  let hashIndex = args.findIndex((arg) => arg === '--hash');
+  if (hashIndex > -1) {
+    hash = args[hashIndex + 1];
+    path = 'pack-' + hash + '/';
+  }
 
-if (require.main === module) {
-  global.window.onload = () => {
-    const element = renderElement(constitutional(), global.document);
-    const container = document.querySelector('#container')
-    container.appendChild(element);
-  };
-}
+  return dom.html(() => {
+    dom.head(() => {
+      dom.title('Constitution of the United States');
+      dom.link({rel: 'stylesheet', href: path + 'constitutional.css'});
+      dom.script({src: path + 'constitutional.js', type: 'text/javascript'});
+    });
 
-// TODO(lbayes): Why won't export default work here?
-module.exports = {
-  components,
-  constitutional,
+    dom.body(() => {
+      dom.div({id: 'container'});
+    });
+  });
 };
 
-
+module.exports = index;

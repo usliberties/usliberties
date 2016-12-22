@@ -26,6 +26,11 @@ WEBPACK_SERVER_CONFIG=webpack-server.config.js
 .PHONY: test test-w dev-install build build-module lint clean
 
 build: data/* src/* static/* dist/constitutional.css dist/constitutional.js dist/constitutional.min.js dist/constitutional.min.gz
+	$(eval HASH:= $(shell script/dist-hash.sh dist))
+	mkdir $(HASH)
+	mv dist/* $(HASH)/
+	nomplate --output dist/index.html --hash ${HASH} index.js
+	mv $(HASH) dist/pack-$(HASH)
 
 # Run all JavaScript tests
 test: ${NODE}
@@ -37,13 +42,16 @@ test-w: ${NODE}
 build-module: src/*
 
 serve:
-	$(BABEL_NODE) server.js
+	open dist/index.html
 
-dist/constitutional.js: src/*.js index.js package.json Makefile
-	$(WEBPACK) --config $(WEBPACK_CLIENT_CONFIG) index.js dist/constitutional.js
+deploy: dist/*
+	deploy-s3.sh dist
+
+dist/constitutional.js: src/*.js client.js package.json Makefile
+	$(WEBPACK) --config $(WEBPACK_CLIENT_CONFIG) client.js dist/constitutional.js
 
 dist/constitutional.min.js: dist/constitutional.js
-	$(WEBPACK) --optimize-minimize --config $(WEBPACK_CLIENT_CONFIG) index.js dist/constitutional.min.js
+	$(WEBPACK) --optimize-minimize --config $(WEBPACK_CLIENT_CONFIG) client.js dist/constitutional.min.js
 
 dist/constitutional.min.gz: dist/constitutional.min.js
 	gzip --best -c dist/constitutional.min.js > dist/constitutional.min.gz
