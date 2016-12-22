@@ -41,8 +41,13 @@ test-w: ${NODE}
 
 build-module: src/*
 
+ifeq ($(PLATFORM), linux)
+serve:
+	google-chrome dist/index.html
+else
 serve:
 	open dist/index.html
+endif
 
 deploy: dist/*
 	deploy-s3.sh dist

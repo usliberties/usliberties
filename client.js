@@ -4,9 +4,10 @@ import constitutional from './src/constitutional';
 import components from './src/components';
 
 if (require.main === module) {
+  const element = renderElement(constitutional(), global.document);
+  
   global.window.onload = () => {
-    const element = renderElement(constitutional(), global.document);
-    const container = document.querySelector('#container')
+    const container = document.querySelector('#container');
     container.appendChild(element);
   };
 }
