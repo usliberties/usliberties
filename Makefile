@@ -29,7 +29,7 @@ build: data/* src/* static/* dist/constitutional.css dist/constitutional.js dist
 	$(eval HASH:= $(shell script/dist-hash.sh dist))
 	mkdir $(HASH)
 	mv dist/* $(HASH)/
-	nomplate --output dist/index.html --hash ${HASH} index.js
+	nomplate --output dist/index.html --hash ${HASH} --pretty index.js
 	mv $(HASH) dist/pack-$(HASH)
 
 # Run all JavaScript tests

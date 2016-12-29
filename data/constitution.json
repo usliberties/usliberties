@@ -1,7 +1,7 @@
 {
     "num": "",
     "type": "document",
-    "name": "US Constitution",
+    "name": "The Constitution of the United States of America",
     "children": [
         {
             "num": "",
@@ -22,7 +22,7 @@
         {
             "num": "",
             "type": "part",
-            "name": "Articles",
+            "name": "The Articles",
             "children": [
                 {
                     "identifier": 1,
@@ -1027,7 +1027,7 @@
         {
             "num": "",
             "type": "part",
-            "name": "Amendments",
+            "name": "The Amendments",
             "children": [
                 {
                     "identifier": 115,
