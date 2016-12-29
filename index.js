@@ -15,7 +15,9 @@ function index() {
   return dom.html(() => {
     dom.head(() => {
       dom.title('Constitution of the United States');
+      dom.meta({charset: 'utf-8'});
       dom.link({rel: 'stylesheet', href: path + 'constitutional.css'});
+      dom.link({rel: 'stylesheet', href: path + 'fonts.css'});
       dom.script({src: path + 'constitutional.js', type: 'text/javascript'});
     });
 

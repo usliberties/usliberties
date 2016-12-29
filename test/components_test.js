@@ -20,8 +20,8 @@ describe('Components', () => {
       name: 'abcd'
     });
 
-    assert.equal(render(element).outerHTML,
-      '<div class="doc"><a class="aclu-button" href="http://bit.ly/2hmlTd3" target="_blank">Donate to the ACLU now!</a><header><h1>abcd</h1><div class="timeline"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"><rect height="100%" width="100%" style="stroke:#333; fill:#ccc;"></rect></svg></div></header></div>');
+   assert.equal(render(element).outerHTML,
+      `<div class="doc"><a class="aclu-button" href="http://bit.ly/2hmlTd3" target="_blank">Protect people's rights. Donate to the ACLU today →</a><header><h1>The Constitution of the</h1><h1>United States of America</h1></header><div class="content"></div></div>`);
   });
 
   it('builds child part', () => {
@@ -36,9 +36,5 @@ describe('Components', () => {
         }
       ],
     });
-
-    // const result = render(element);
-    //assert.equal(result.outerHTML,
-      //'<div class="doc"><h1>efgh</h1><div class="part"><h2>Preamble</h2></div></div>');
   });
 });
