@@ -8,7 +8,6 @@ function timeline(constitution) {
     }, () => {
     
     svg.line({'x1': '0', 'y1': '50%', 'x2': '100%', 'y2': '50%', 'stroke': 'black', 'stroke-width': '0.5'});
-
     });
   });
 }

@@ -49,13 +49,30 @@ function getId(entity) {
 
 function amendment(amendment) {
   return dom.div({id: getId(amendment), className: 'amendment'}, () => {
-    dom.h2({className: 'amendment-num'},`${amendment.num}`);
-    dom.h3({className: 'amendment-name'}, `${amendment.name}`);
+    let sup = getAmendmentSup(amendment);
+    dom.h3({className: 'amendment-num'}, () => {
+      dom.text(sup[0]);
+      dom.sup(sup[1]);
+      dom.text(` Amendment: ${amendment.name}`);
+    });
 
     dom.div({className: 'amendment-content'}, () => {
       processChildren(amendment.children);
     });
   });
+}
+
+function getAmendmentSup(amendment) {
+  const number = (amendment.num).split(' ')[1];
+  if (number == '1' || number == '21') {
+    return [number, 'st'];
+  } else if (number == '2' || number == '22') {
+    return [number, 'nd'];
+  } else if (number == '3' || number == '23') {
+    return [number, 'rd'];
+  } else {
+    return [number, 'th'];
+  }
 }
 
 function article(article) {
@@ -76,7 +93,7 @@ function paragraph(paragraph) {
 function part(part) {
   return dom.div({id: getId(part), className: 'part'}, () => {
     if (part.name == 'The Amendments') {
-      dom.h1({className: 'amendments-header'}, part.name);
+      dom.h2({className: 'amendments-header'}, part.name);
     }
     processChildren(part.children);
     dom.hr();

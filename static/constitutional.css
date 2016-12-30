@@ -32,9 +32,9 @@ p {
 #Preamble {
   font-size: 28px;
   line-height: 1.7;
-  max-width: 1000px;
-  margin: 32px -80px 58px -80px;
+  margin: 32px 0 58px 0;
   text-align: justify;
+  padding: 0;
 }
 
 #Preamble p {
@@ -75,12 +75,13 @@ p {
 
 .amendment-content {
   border-left: 1px solid lightgrey;
-  margin: 2px 0 20px 2px;
+  margin: 2px 0 20px 8px;
   padding: 4px 0 0 12px;
 }
 
 .amendments-header {
   margin: 0 0 20px 0;
+  text-align: center;
 }
 
 .article-title {
@@ -90,7 +91,7 @@ p {
 .content {
   font-size: 20px;
   line-height: 1.58;
-  max-width: 740px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 20px;
   word-break: break-word;
@@ -99,6 +100,7 @@ p {
 
 .part{
   margin: 0 0 58px 0;
+  padding: 0 80px 0 80px;
 }
 
 .part-link {
